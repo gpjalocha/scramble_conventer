@@ -1,0 +1,19 @@
+caseTostring<-function(edges,edgesEO,corners,cornersEO1,cornersEO2){
+  str<-rep(NA,54)
+  str[c(5,14,23,32,41,50)]<-c('U','R','F','D','L','B')
+  str[setdiff(1:54,c(5,14,23,32,41,50))]<-
+    c(edges,
+      edgesEO,#12
+      corners,#24
+      cornersEO1,#32
+      cornersEO2#40
+    )[c(27,3,28,2,4,26,1,25,
+        41,16,36,20,19,45,24,40,
+        42,13,33,5,8,46,21,37,
+        30,9,29,10,12,31,11,32,
+        43,14,34,18,17,47,22,38,
+        44,15,35,7,6,48,23,39)]
+  return(
+    paste(str,collapse = '')
+  )
+}

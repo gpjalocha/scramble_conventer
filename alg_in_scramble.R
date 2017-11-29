@@ -1,0 +1,16 @@
+edges_dict<-data.frame(letter=c('B','A','C','J','P','N','L','E','F','G','H',
+                                'W','M','I','Z','D','U','S','K','R','O','T'),
+                       edgeN=rep(2:12,2),
+                       edgeO=c(rep(0,11),rep(1,11)))
+corner_dict<-data.frame(letter=c('B','A','C','F','G','H','E',
+                                 'J','D','S','Z','P','U','L',
+                                 'W','M','I','K','R','O','T'),
+                        edgeN=rep(c(1,2,4:8),3),
+                        edgeO=c(rep(0,7),rep(1,7),rep(2,7)))
+str_to_case<-function(x){
+  str<-strsplit(x,split='')
+  str<-lapply(str,str_to_upper)
+  num<-lapply(str,function(y)edges_dict$edgeN[match(y,edges_dict$letter)])
+  Or<-lapply(str,function(y)ifelse(sum(edges_dict$edgeO[match(y,edges_dict$letter)])%%2==0,0,1))
+  return(lapply(1:length(str),function(x)c(num[[x]],Or[[x]])))
+}
