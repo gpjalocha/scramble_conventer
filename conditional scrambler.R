@@ -1,3 +1,10 @@
+source("alg_in_scramble.R")
+source("parse Scrambles.R")
+source("put_alg_in scramble.R")
+source("reper pairity.R")
+source("scramble to string.R")
+source("string_cube_representation.R")
+
 reperPairity<-function(x,y,ind=c(1,2),pieces='E'){
 s=0
 for(a in 1:12){
