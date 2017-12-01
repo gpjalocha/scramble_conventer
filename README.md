@@ -11,7 +11,7 @@ My work reqiures packages like *permutations* that allows to represent permutati
 
 It's totally non-user friendly. There is no UI for this and it requires to run socket server which allows to solve cube with two-phase solver
 
-```bash
+```sh
 python start_server.py 8080 20 2
 ```
 
