@@ -1,7 +1,7 @@
 # scramble_conventer
 Conditional scrambler for 3x3BLD training
 
-In this repository I'll share my scripts i use for 3x3BLD training. *conditional scrambler.*R allows to generate scrambles with given conditions, i.e.
+In this repository I'll share my scripts i use for 3x3BLD training. *conditional scrambler.R* allows to generate scrambles with given conditions, i.e.
 
 * N twisted edges/corners
 * Having specific 3-cycle in scramble(in first cycle)
