@@ -18,7 +18,7 @@ python start_server.py 8080 20 2
 ...and in R I convert scrambled cubes from permutation form to string cube form, so it is fetching scrambles invoking:
 
 ```
-http://localhost:8080/DRLUUBFBRBLURRLRUBLRDDFDLFUFUFFDBRDUBRUFLLFDDBFLUBLRBD
+http://localhost:8080/<string cube scramble, for example:DRLUUBFBRBLURRLRUBLRDDFDLFUFUFFDBRDUBRUFLLFDDBFLUBLRBD>
 ```
 
 If someone is interested in developing it in better language(java maybe) i can give some tips about building features mentioned here without brute-force approach.
